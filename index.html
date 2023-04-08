@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="main">
+            <div class="form">
+                
+                <label for="princable">Enter the Princable</label>
+                <input type="text"  class="princiapl" required>
+                <label for="term">Enter the Term</label>
+                <input type="text" id="term" class="term" required>
+                <label for="ar">Enter the annual rate</label>
+                <input type="text" id="ar" class="annual_rate" required>
+                <div class="date-div1">
+                    <label for="date1" id="spi">Month</label>
+                    <label for="date2" id="spi" style="margin-left: -25px;">Day</label>
+                    <label for="date3" id="spi" style=>Year</label>
+                </div>
+                <div class="date-div2">
+                    <input type="text" class="spi" id="mm" required>
+                    <input type="text" class="spi" id="dd" required>
+                    <input type="text" class="spi" id="yy" required>
+                </div>
+                
+                
+                <input type="button" class="btn" id="btn1" value="Amortize" onclick="getVal()" >
+                <input type="button" class="btn" value="Clear" onclick="window.location.reload()">
+                
+            </div>
+            <div class="mainpars">
+                <div class="prif">Principal :<span id="prif"></span> </div>
+                <div class="termf">Term :<span id="termf"></span></div>
+                <div class="arf">Annual rate :<span id="arf"></span></div>
+                <div class="idf">Initial Date :<span id="idf"></span></div>
+                <div class="nopf">Number of Payments :<span id="nopf"></span></div>
+                <div class="mrf">Monthly Rate :<span id="mrf"></span></div>
+                <div class="mpf">Mortgage Payment :<span id="mpf"></span></div>
+            </div>
+
+        </div>
+        <div class="table">
+        </div>
+        <button class="movingbtn"></button>
+        <script>
+            
+            
+            const scrollbtn=document.querySelector(".movingbtn");
+            scrollbtn.onclick=function()
+            {
+                window.scrollTo({
+                    top:15,behavior:"smooth",
+                })
+            };
+            
+            
+        </script>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+
+@font-face {
+    font-family:'Poppins';
+    src: url(Poppins-Medium.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', serif;
+}
+body
+{
+    background-color: rgb(228, 226, 226);
+     /* height: 10000px;  */
+}
+main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(228, 226, 226);
+
+}
+
+.main 
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 200px;
+    justify-content: space-evenly;
+    align-items:center;
+    background-color: white;
+    width: fit-content;
+    margin: 50px 50px 0;
+    border: none;
+    border-radius: 20px;
+}
+
+.main .form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    padding: 30px 10px;
+    background-color: rgba(134, 133, 133, 0.425);
+    border: none;
+    border-radius: 30px;
+    width: 300px;
+}
+.form.form2
+{
+    display: none;
+}
+
+.main .mainpars
+{
+    background-color: rgba(134, 133, 133, 0.425);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin: 50px;
+    padding: 30px;
+    gap: 30px;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    display: none;
+    height: 427px;
+    padding-left: 60px;
+    
+    
+}
+.mainpars.mainpars2
+{
+    display: flex;
+    
+}
+ .main  input   /* form */
+{
+    width: 200px;
+    height: 38px;
+    border: none;
+    border-radius: 38px;
+    background-color: #eee;
+    box-shadow: 5px 3px 19px rgba(134, 133, 133, 0.425);
+    padding: 0 10px;
+}
+.main  label    /* form */
+{
+    text-align: center;
+}
+.main  .btn     /* form */
+{
+    background-color: rgba(134, 133, 133, 0.425);
+    border: 1px solid rgb(179, 179, 179);
+    height: 38px;
+    border-radius: 38px;
+    margin-top: 15px;
+    width: 150px;
+    cursor: pointer;
+
+    
+}
+.table
+{
+    
+    height: fit-content;
+    width: fit-content;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 10px;
+    width: fit-content;
+    
+}
+table td
+{
+    
+    width: 130px;
+    text-align: center;
+    padding: 0 20px;
+    margin: 10px;
+}
+
+.date-div1
+{
+    width: 190px;
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 15px 15px 10px 15px;
+}
+.date-div1 label
+{
+    color: black;
+    font-size: 16px;
+}
+.date-div2
+{
+    width: 190px;
+    display: inline-flex;
+    justify-content: space-evenly;
+    margin: 1px ;
+}
+.date-div2 input
+{
+    width:60px;
+    padding: 0 10px;
+    color: black;
+    background-color: #eee;
+    margin-left: 3px;
+    margin-bottom: 10px;
+}
+#yy
+{
+    width: 80px;
+    
+}
+
+.movingbtn
+{
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-image: url(arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.png);
+    background-size: cover;
+    transform: rotate(-90deg);
+    background-color: inherit;
+    cursor: pointer;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    transition: 0.2s;
+    opacity: 0;
+}
+.movingbtn.show
+{
+    opacity: 1;
+}
